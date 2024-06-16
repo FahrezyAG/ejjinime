@@ -12,11 +12,11 @@ const Genre = async () => {
         </h1>
         {genre.data.map((data) => {
           return (
-            <div>
             <Link
+              key={data.mal_id}
               href={`/genres/${data.mal_id}/${data.name}`}
               className="flex text-color-primary justify-between m-1 cursor-pointer hover:text-color-accent"
-              >
+            >
               <div className="flex mb-1">
                 <p className="px-2">{data.name}</p>
               </div>
@@ -24,7 +24,6 @@ const Genre = async () => {
                 <p className="px-2">{data.count}</p>
               </div>
             </Link>
-              </div>
           );
         })}
       </div>
