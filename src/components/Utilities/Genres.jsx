@@ -3,7 +3,8 @@ import Link from "next/link";
 
 const Genre = async () => {
   const genre = await getAnimeResponse("genres/anime");
-
+console.log(genre)
+console.table(genre)
   return (
     <div>
       <div className="mt-10 bg-color-secondary mb-4 rounded-lg">
