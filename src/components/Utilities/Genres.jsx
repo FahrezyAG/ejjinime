@@ -10,10 +10,10 @@ const Genre = async () => {
         <h1 className="text-2xl text-center text-color-dark rounded-t-md p-4 bg-[#ece48b] mb-3">
           Genre
         </h1>
-        {genre.data.map((data) => {
+        {genre.data.map((data, index) => {
           return (
             <Link
-              key={data.mal_id}
+              key={index}
               href={`/genres/${data.mal_id}/${data.name}`}
               className="flex text-color-primary justify-between m-1 cursor-pointer hover:text-color-accent"
             >

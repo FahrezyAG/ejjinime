@@ -1,7 +1,7 @@
 import AnimeList from "@/components/Animelist";
 import Header from "@/components/Animelist/Header";
 import { getAnimeResponse } from "./libs/api.libs";
-import Genre from "@/components/Animelist/genres";
+import Genre from "@/components/Utilities/Genres";
 import Carousels from "@/components/Utilities/Carousel";
 
 const Page = async () => {
@@ -35,7 +35,7 @@ const Page = async () => {
             </div>
           </div>
           <div className="w-full sm:w-48 xl:ml-4">
-            <Genre />
+            <Genre/>
           </div>
         </div>
       </section>
