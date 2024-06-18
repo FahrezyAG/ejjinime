@@ -25,7 +25,7 @@ const InputSearch = () => {
     <div className="flex">
       <input
         placeholder="Search Anime ...."
-        className="border-1 border-color-secondary rounded-l-lg px-8 py-2 "
+        className="border-1 border-color-secondary rounded-l-lg px-4 py-2 "
         ref={searchRef}
         onKeyDown={handleSearch}
       />

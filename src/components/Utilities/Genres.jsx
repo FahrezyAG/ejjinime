@@ -50,7 +50,7 @@ const Genre = () => {
         ))}
         <div className="flex justify-center">
           {loading ? (
-            <p>Loading...</p>
+            <p className="text-color-primary p-5">Loading...</p>
           ) : (
             hasMoreItems && (
               <button
