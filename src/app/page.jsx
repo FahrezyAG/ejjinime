@@ -6,7 +6,7 @@ import Carousels from "@/components/Utilities/Carousel";
 
 const Page = async () => {
   const topAnime = await getAnimeResponse("top/anime", "limit=10");
-  const ongoingAnime = await getAnimeResponse("seasons/now", "limit=10");
+  const ongoingAnime = await getAnimeResponse("seasons/now", "limit=10", "page=1");
   let upcomingAnime = await getAnimeResponse("seasons/upcoming", "limit=8");
   return (
     <>
